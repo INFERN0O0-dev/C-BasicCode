@@ -1,0 +1,30 @@
+#include <iostream>
+
+void main()
+
+{
+	float Gasolina, Kms, GasolinaF, KmsF, totalG, TotalKm, ConsumoPor100;
+
+	std::cout << "Escreve quantos Kms tem agora";
+	std::cin >> Kms;
+
+	std::cout << "Escreve quantos litros de Gasolina tem agora";
+	std::cin >> Gasolina;
+
+	std::cout << "Vamos andar Vrum Vrum";
+
+	std::cout << "Escreve quantos Kms tem no final da viagem";
+	std::cin >> KmsF;
+
+	std::cout << "Escreve quantos litros de Gasolina tem agora";
+	std::cin >> GasolinaF;
+
+	totalG = (Gasolina - GasolinaF);
+	TotalKm = (Kms - KmsF);
+
+	ConsumoPor100 = (totalG / TotalKm * 100);
+
+	std::cout << "No total gastou " << totalG << "litros de gasolina e andou" << TotalKm << "kilometros. ";
+	std::cout << "E a media de consumo por 100km é de " << ConsumoPor100 << ". ";
+
+}
