@@ -1,0 +1,24 @@
+#include <iostream>
+
+void main() 
+
+{
+	int P1, P2, P3, P4, Media;
+
+	std::cout << "Escreve o primeiro numero";
+	std::cin >> P1;
+
+	std::cout << "Escreve o segundo numero";
+	std::cin >> P2;
+
+	std::cout << "Escreve o terceiro numero";
+	std::cin >> P3;
+
+	std::cout << "Escreve o quarto numero";
+	std::cin >> P4;
+
+	Media = (P1 + P2 + P3 + P4) / 4;
+
+	std::cout << "A media dos 4 numeros é " << Media << ". ";
+
+}
