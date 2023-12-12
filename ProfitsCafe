@@ -1,0 +1,24 @@
+#include <iostream>
+
+void main()
+
+{
+	float sandes = 1, bolos = 0.8, cafes = 0.6, refrigerantes = 1.5, lucro;
+
+	std::cout << "Escreve quantas sandes foram vendidas";
+	std::cin >> sandes;
+
+	std::cout << "Escreve quantas bolos foram vendidas";
+	std::cin >> bolos;
+
+	std::cout << "Escreve quantas cafes foram vendidas";
+	std::cin >> cafes;
+
+	std::cout << "Escreve quantas refrigerantes foram vendidas";
+	std::cin >> refrigerantes;
+
+	lucro = (sandes * 1 + bolos * 0.8 + cafes * 0.6 + refrigerantes * 1.5);
+
+	std::cout << "O lucro obtido pela tarde foi de " << lucro << "euros. ";
+
+}
