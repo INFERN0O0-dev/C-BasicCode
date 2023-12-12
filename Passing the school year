@@ -1,0 +1,34 @@
+#include <iostream>
+#include <locale.h>
+
+void main()
+
+{
+
+    setlocale(LC_ALL, "Portuguese");
+    float aprovado, naprovado, nota;
+
+    do
+    {
+        std::cout << "Por favor, insira uma nota válida entre 0 e 20.";
+        std::cin >> nota;
+
+    } while ((nota < 0) || (nota > 20));
+
+
+    if (nota > 9.5)
+    {
+        std::cout << "O aluno passou!";
+
+    }
+
+    else
+    {
+        std::cout << "O aluno chumbou.";
+
+    }
+
+}
+    
+   
+
