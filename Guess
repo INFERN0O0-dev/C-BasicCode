@@ -1,0 +1,40 @@
+#include <iostream>
+#include <ctime>
+
+void main() 
+
+{
+
+    srand(time(0));
+
+    int numero = rand() % 100 + 1; 
+    int palpite, tentativas = 0;
+
+    std::cout << "Bem vindo ao jogo!\n";
+
+    do 
+    {
+        std::cout << "Digite o numero: ";
+        std::cin >> palpite;
+
+        tentativas++;
+
+        if (palpite < numero) 
+        {
+            std::cout << "O numero correto e maior. Tente novamente!\n";
+        
+        }
+        else if (palpite > numero) 
+        {
+            std::cout << "O numero correto e menor. Tente novamente!\n";
+        
+        }
+        else 
+        {
+            std::cout << "Parabens! Voce acertou o numero em " << tentativas << " tentativas.\n";
+        
+        }
+
+    } while (palpite != numero);
+
+}
